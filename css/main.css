@@ -91,19 +91,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   header {
+   /* #welcome-container {
      background-image:  url("../img/smallscreenheader.jpg");
      background-repeat: no-repeat;
      background-color: #111111;
      background-size: cover;
 
-   }
+   } */
 
    body {
      margin: 0;
      font-family: "Times New Roman", Times, serif;
    }
+.jumbotron {
+  background-color: #e9fbff;
+}
 
+nav {
+  background-color: #fff;
+}
    .main-content{
      padding: 0 5% 0 5%;
    }
@@ -115,15 +121,16 @@ textarea {
      font-size: 1.5em;
    }
 
-   a.nav {
+   a{
      text-decoration: none;
      color: #ffffff;
+     font-size: 1.5em;
      transition: transform .3s;
    }
 
-   a.nav:hover{
+   a:hover{
      color: #777777;
-     transform: scale(1.5);
+     transform: scale(1.1);
    }
 
    i {
@@ -131,12 +138,12 @@ textarea {
    }
   .home-intro-section {
      padding: 5%;
-     margin-top: 10%;
    }
 
    h2 {
      text-align: center;
      font-size: 2em;
+     padding-top: 10%;
    }
 
    .picture-index {
@@ -238,16 +245,45 @@ textarea {
   cursor: pointer;
 }
 
+img{
+  max-width: 600px;
+}
+a.fa-links{
+  color: #1b7a8a;
+}
+a.fa-links:hover{
+  color: #e9fbff;
+}
+#carousel-container {
+  width: 100%;
+  display: inline;
+}
+.carousel-inner {
+    width: 100%;
+}
+.page-intro {
+  padding-top: 5%;
+}
 @media only screen and (min-width: 600px) {
-    header {
+    /* header {
       background-image: url("../img/headerwithlogo.jpg"), url("../img/headerbackground.jpg");
       background-repeat: no-repeat, repeat;
       background-color: #111111;
 
-    }
+    } */
 
     body {
       margin: 0;
+    }
+    img{
+      max-width: 600px;
+    }
+    #carousel-container {
+      width: 100%;
+      display: inline;
+    }
+    .carousel-inner {
+        width: 100%;
     }
     .wrapper {
       margin: 5% 10% 5% 10%;
@@ -264,12 +300,12 @@ textarea {
     a.nav {
       text-decoration: none;
       color: #ffffff;
-      transition: transform .3s;
+      /* transition: transform .3s; */
     }
 
     a.nav:hover{
       color: #777777;
-      transform: scale(1.5);
+      /* transform: scale(1.5); */
     }
 
     h2 {

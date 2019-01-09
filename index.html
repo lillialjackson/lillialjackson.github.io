@@ -11,55 +11,164 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <header>
-    <nav class="nav-links">
-        <span class="nav">Home</span> |
-        <a href="./projects.html" class="nav">Projects</a> |
-        <a href="./musings.html" class="nav">Musings</a> |
-        <a href="./about.html" class="nav">About</a>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">{The Lillia}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./musings.html">Musings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
 <hr>
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-6">Welcome Most Esteemed Guests!</h1>
+      <p class="lead">Hello and welcome to my site. My name is Lillia! I am a Software Engineer from Colorado. I built this site so that I could share my thoughts
+        and insights on many of my favorite pass times. On this site you will find blurbs about my many interests, passions, persuits, and links to my various projects. Click the button below to visit my github! </p>
+        <a href="https://github.com/lillialjackson" class="btn btn-info btn-lg active" role="button" aria-pressed="true"> To Github! </a>
+    </div>
+  </div>
+<div class="container">
+  <div class="row">
+  <div id="carousel-container" class="carousel slide col" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/chicamocha.jpg" class="d-block w-100" alt="Colombia">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Climbing in Colombia</h5>
+              <p>Climbing in Mesa De Los Santos, Colombia</p>
+            </div>
+          </div>
 
-  <!-- Add your site or application content here -->
-  <div class="main-content">
-    <h2> Welcome Most Esteemed Guest! </h2>
-    <div class="wrapper">
-          <p>Hello and welcome to my interests site. My name is Lillia! I am a web developer from Colorado. I built this site so that I could share my thoughts
-            and insights on many of my favorite pass times. On this site you will find links to my various projects and blurbs about my many interests including, but not limited to:</p>
-        <div class="interests-list">
-          <ul>
-            <li> Coding </li>
-            <li> Climbing </li>
-            <li> Brazilian JiuJitsu </li>
-            <li> Gaming </li>
-            <li> Traveling </li>
-            <li> Brewing Kombucha </li>
-            <li> Crafting </li>
-          </ul>
-        </div>
-        <div>
-          <img class="picture-index" src="./img/comboclimbing.jpg" alt="me">
-        </div>
+          <div class="carousel-item">
+            <img src="./img/splits.jpg" class="d-block w-100" alt="indoor climb">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/sf.jpg" class="d-block w-100" alt="San Francisco">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/bjj.jpg" class="d-block w-100" alt="Jiu Jitsu">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Gals in Gis</h5>
+                    <p>Ladies of Brazilian Jiu Jitsu</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/suesca.jpg" class="d-block w-100" alt="climbing">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5> Suesca, Colombia</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/approach.jpg" class="d-block w-100" alt="approach">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Rickety Bridge</h5>
+                        <p>Approaching the climb in Suesca</p>
+                      </div>
+                    </div>
+                <div class="carousel-item">
+                  <img src="./img/torres.jpg" class="d-block w-100" alt="Torres Del Paine">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Torres Del Paine, Chile</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/manz.jpg" class="d-block w-100" alt="Manzanita">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/ire.jpg" class="d-block w-100" alt="Ireland">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Ireland</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/shelf.jpg" class="d-block w-100" alt="Shelf Road">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Shelf Road, CO</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/heel.jpg" class="d-block w-100" alt="climbing">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/bucha.jpg" class="d-block w-100" alt="Kombucha">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/cave.jpg" class="d-block w-100" alt="climbing">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/pinch.jpg" class="d-block w-100" alt="climbing">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/knee.jpg" class="d-block w-100" alt="climbing">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/comp.jpg" class="d-block w-100" alt="climbing">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/IMG_9849.jpg" class="d-block w-100" alt="Scoby's">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kombucha Scoby's</h5>
+                    <p>How many scoby's is too many scoby's?</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/IMG_9970.jpg" class="d-block w-100" alt="climbing">
+                </div>
 
+      </div>
+    </div>
+    <div class="col">
+      <h5>My rapidly growing list of Interests:</h5>
+        <p>I like to think of myself as a well rounded individual. Over the years I have collected more and more hobbies - including, but not limited to:</p>
+      <ul>
+        <li> Coding </li>
+        <li> Climbing </li>
+        <li> Brazilian JiuJitsu </li>
+        <li> Gaming </li>
+        <li> Traveling </li>
+        <li> Brewing Kombucha </li>
+        <li> Crafting </li>
+      </ul>
       <p class="home-intro-section">
         Feel free to look around! Stay as long as you like! You can contact me via the about page with comments, questions, and requests.
         <br>
         Feel free to check out my linkedin and github accounts as well!
 
         <br>
-        <a href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-2x" > </i></a>
-        <a href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
+        <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-2x" > </i></a>
+        <a class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
       </p>
     </div>
+
+  </div>
+  </div>
+  </div>
+
+
+
       <hr>
 
     <footer class="wrapper">
@@ -72,14 +181,17 @@
       <div>
       <a class="contact-link" href="mailto:lillia.l.jackson@gmail.com">Email me!</a>
       <br>
-      <a href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
-      <a href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
+      <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
+      <a class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
     </div>
     </footer>
   </div>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

@@ -11,17 +11,35 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <header>
-    <nav class="nav-links">
-        <a href="./index.html" class="nav">Home</a> |
-        <a href="./projects.html" class="nav">Projects</a> |
-        <a href="./musings.html" class="nav">Musings</a> |
-        <span class="nav">About</span>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">{The Lillia}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./musings.html">Musings</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
 <hr>
 <body>
@@ -31,14 +49,13 @@
 
   <!-- Add your site or application content here -->
   <div class="main-content">
-      <h2> About </h2>
       <div class="wrapper">
-      <p> I am a Full Stack Web Developer from Colorado. I love coding, learning, reading. I mostly work in React, Postgresql, and Express. I love learning new technologies
+      <p> I am a Software Engineer from Colorado. I love coding, learning, reading. I mostly work in React, Postgresql, and Express. I love learning new technologies
         and look forward to learning React Native and exploring game development in the future! When I am not programming I am practicing Brazilian JiuJitsu, rock climbing,
         brewing my own Kombucha, crafting, gaming, or reading! Feel free to contact me about any of my projects, with your own project, or with any questions or comments!
         <br>
-        <a href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-2x" > </i></a>
-        <a href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
+        <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-2x" > </i></a>
+        <a  class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
       </p>
 
         <img class="picture-about" src="./img/aboutpic.jpg" alt="me">
@@ -58,14 +75,17 @@
       <div>
       <a class="contact-link" href="mailto:lillia.l.jackson@gmail.com">Email me!</a>
       <br>
-      <a href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
-      <a href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
+      <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
+      <a  class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
     </div>
     </footer>
   </div>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

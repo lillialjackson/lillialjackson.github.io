@@ -11,17 +11,35 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
   <header>
-      <nav class="nav-links">
-          <a href="./index.html" class="nav">Home</a> |
-          <span class="nav">Projects</span> |
-          <a href="./musings.html" class="nav">Musings</a> |
-          <a href="./about.html" class="nav">About</a>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">{The Lillia}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./musings.html">Musings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </header>
 <hr>
 <body>
@@ -31,8 +49,7 @@
 
   <!-- Add your site or application content here -->
   <div class="main-content">
-      <h2> Projects! </h2>
-      <p>Below I have listed a collection of my various projects, click the project title for more information:</p>
+      <p class="page-intro">Below I have listed a collection of my various projects, click the project title for more information:</p>
     <div class="project-list">
       <ul>
         <li class="project-list-item" > Alpha for Beta
@@ -41,7 +58,7 @@
                 the react framework definitely helped me manage the state of my app with more ease, and helped me keep my code DRY with its reusable components.
                 <br>
                 <a href="https://lillialjackson.github.io/alpha2/" target="_blank">
-                  <button class="project-button" type="button"> Visit Alpha </button>
+                  <button class="btn btn-info btn-md active" type="button"> Visit Alpha </button>
                 </a>
              </p>
           </li>
@@ -51,7 +68,7 @@
               requests using JS and the Knex library. Knex is a really fun and easy to use library that allows you to write your database queries in JS.
               <br>
               <a href="https://pure-beach-58712.herokuapp.com/" target="_blank">
-                <button class="project-button" type="button"> Visit Lost & Hound </button>
+                <button class="btn btn-info btn-md active" type="button"> Visit Lost & Hound </button>
               </a>
             </p>
         </li>
@@ -61,7 +78,7 @@
             how to make the HTML canvas interactive, and making a few retro style tile games - part of my Retro Jam game collection.
             <br>
               <a href="https://lillialjackson.github.io/BumpDotPass/" target="_blank">
-                <button class="project-button" type="button"> Visit Bump Dot Pass</button>
+                <button class="btn btn-info btn-md active" type="button"> Visit Bump Dot Pass</button>
               </a>
           </p>
         </li>
@@ -71,7 +88,7 @@
             The second game in my Retro Jam game collection.
             <br>
               <a href="https://lillialjackson.github.io/BumpDotSmash/" target="_blank">
-                <button class="project-button" type="button"> Visit Bump Dot Smash</button>
+                <button class="btn btn-info btn-md active" type="button"> Visit Bump Dot Smash</button>
               </a>
           </p>
         </li>
@@ -81,7 +98,7 @@
             object controls and it really helped me expand my knowledge on classes in JS, since they are relatively new compared to other OOP languages. Racer Chaser is the third game in my Retro Jam game collection.
             <br>
               <a href="https://lillialjackson.github.io/Racer-Chaser/" target="_blank">
-                <button class="project-button" type="button"> Visit Racer Chaser </button>
+                <button class="btn btn-info btn-md active" type="button"> Visit Racer Chaser </button>
               </a>
           </p>
         </li>
@@ -89,7 +106,7 @@
           <p class="project-content"> Play against the computer in your terminal.
             <br>
               <a href="https://github.com/lillialjackson/pythonminigames" target="_blank">
-                  <button class="project-button" type="button"> Check Out the Repo </button>
+                  <button class="btn btn-info btn-md active" type="button"> Check Out the Repo </button>
               </a>
           </p>
         </li>
@@ -98,7 +115,7 @@
             relay power supply, and a waterproof heating pad made for seedlings. Check out the BrewchaGo repos on my github for progress!
             <br>
               <a href="https://github.com/lillialjackson" target="_blank">
-                  <button class="project-button" type="button"> Visit My Github </button>
+                  <button class="btn btn-info btn-md active" type="button"> Visit My Github </button>
               </a>
            </p>
         </li>
@@ -117,14 +134,17 @@
       <div>
       <a class="contact-link" href="mailto:lillia.l.jackson@gmail.com">Email me!</a>
       <br>
-      <a href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
-      <a href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
+      <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
+      <a  class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
     </div>
     </footer>
   </div>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
