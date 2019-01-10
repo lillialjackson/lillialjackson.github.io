@@ -104,6 +104,7 @@ textarea {
      font-family: "Times New Roman", Times, serif;
    }
 .jumbotron {
+  padding-top: 20%;
   background-color: #e9fbff;
 }
 
@@ -114,16 +115,9 @@ nav {
      padding: 0 5% 0 5%;
    }
 
-   .nav-links{
-     padding: 20% 2% 5%;
-     text-align: center;
-     color: #ffffff;
-     font-size: 1.5em;
-   }
 
    a{
      text-decoration: none;
-     color: #ffffff;
      font-size: 1.5em;
      transition: transform .3s;
    }
@@ -178,6 +172,7 @@ nav {
    .footer-nav:hover{
      color: #777777;
      font-weight: bold;
+     text-decoration: none;
    }
 
    .contact-link:hover{
@@ -241,6 +236,7 @@ nav {
 }
 .main-contact:hover {
   color:#777777;
+  text-decoration: none;
   font-size: 2.1em;
   cursor: pointer;
 }
@@ -264,6 +260,10 @@ a.fa-links:hover{
 .page-intro {
   padding-top: 5%;
 }
+.navbar-light .navbar-brand {
+  font-size: 1.5em;
+  color: #1b7a8a;
+}
 @media only screen and (min-width: 600px) {
     /* header {
       background-image: url("../img/headerwithlogo.jpg"), url("../img/headerbackground.jpg");
@@ -271,7 +271,9 @@ a.fa-links:hover{
       background-color: #111111;
 
     } */
-
+.col {
+  height: 800px;
+}
     body {
       margin: 0;
     }
@@ -284,6 +286,9 @@ a.fa-links:hover{
     }
     .carousel-inner {
         width: 100%;
+    }
+    .jumbotron {
+      padding-top: 10%;
     }
     .wrapper {
       margin: 5% 10% 5% 10%;
@@ -342,13 +347,12 @@ a.fa-links:hover{
     }
 
     .footer-nav:hover{
-      color: #777777;
-      font-weight: bold;
+      color: #7f7f7f;
     }
 
     .contact-link:hover{
-      color: #777777;
-      font-weight: bold;
+      color: #7f7f7f;
+      text-decoration: none;
     }
 }
 
@@ -360,14 +364,6 @@ a.fa-links:hover{
   font-weight: bold;
   color: #777777;
 }
-
-/* .project-content {
-  display: none;
-}
-
-.project-content-toggle-view {
-  display: block;
-} */
 
 
 .picture-about{
