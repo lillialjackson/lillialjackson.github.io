@@ -49,22 +49,37 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+
+
   <div class="main-content">
-      <p class="page-intro" >Welcome to the inner workings of my mind, so something something....</p>
-    <div class="post-list">
-      <ul>
-        <li class="project-list-item"> This Site
-          <p class="project-content"> I built this site as an introduction to me and my life as a developer. I wanted to show case my various projects,
-          but also give a sense for who I am as a person. I have a lot of hobbies and interests that inspire a lot of passion and that I am happy to share about.
-          I have always loved problem solving and challenging myself. Rock climbing and Jiujitsu were an immediate fit for me. They have both mental and physical
-         aspects that require patience and determination to succeed. Coding and programming possessed those same qualities which naturally fit my personality and bring
-         me a lot of enjoyment. I am always excited to learn new technologies and languages, solve problems, and create. I highly value self improvement, determination,
-         and joy. I always strive to learn more, improve my technique, and love what I do.
-         <br> This site itself was made in HTML5, CSS3 with Bootstrap, and ES7.
-        </p>
-        </li>
-        <li class="project-list-item"> Becoming a Developer
-          <p class="project-content">
+      <p class="page-intro" >Here's some stuff I think about, have thought about, etc....</p>
+      <div id="accordion">
+      <div class="row">
+      <div class="card col-sm-12 col-md-4">
+        <div class="card-header text-center" id="headingOne">
+            <img src="./img/thelillialogo.png" class="card-img-top" alt="climbing">
+            <a class="h4 card-title text-center" data-toggle="collapse" href="#collapseOne" >This Site </a>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            I built this site as an introduction to me and my life as a developer. I wanted to show case my various projects,
+            but also give a sense for who I am as a person. I have a lot of hobbies and interests that inspire a lot of passion and that I am happy to share about.
+            I have always loved problem solving and challenging myself. Rock climbing and Jiujitsu were an immediate fit for me. They have both mental and physical
+           aspects that require patience and determination to succeed. Coding and programming possessed those same qualities which naturally fit my personality and bring
+           me a lot of enjoyment. I am always excited to learn new technologies and languages, solve problems, and create. I highly value self improvement, determination,
+           and joy. I always strive to learn more, improve my technique, and love what I do.
+           <br> This site itself was made in HTML5, CSS3 with Bootstrap, and ES7.
+          </div>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4">
+        <div class="card-header text-center" id="headingTwo">
+          <img src="./img/computer.png" style="width: 76%" class="card-img-top" alt="climbing">
+          <a class="h4 card-title text-center" data-toggle="collapse" href="#collapseTwo" >Becoming a Developer</a>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
             I come from what would be considered a "non-traditional" background for SWE, though despite how it sounds there seem to be many developers like me working
             in tech. I studied Anthropology and was on track for Medical School through my undergraduate program, and was preparing to go on to P.A. or N.P. school when I decided to
             take a brief sabbatical from academia and travel for a short time. I worked and saved money for about a year, and was soon off on my first adventure abroad.
@@ -82,10 +97,16 @@
             to be excited about what I was learning and explore the different possibilities.
             <br> I continue to improve my programming skills daily, develop my personal projects, work with great teams to develop some awesome professional projects. I hope try my hand at game development in the near future.
             If I can learn anything from the past, I know that my goals may shift and grow as I get further into my programming career, but I am excited everyday by the opportunity to build, create, and explore my passions.
-          </p>
-        </li>
-        <li class="project-list-item"> Climbing
-          <p class="project-content">
+          </div>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4">
+        <div class="card-header text-center" id="headingThree">
+          <img src="./img/knot.png" style="width: 95%" class="card-img-top" alt="climbing">
+          <a class="h4 card-title text-center" data-toggle="collapse" href="#collapseThree" >Climbing</a>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
             I started climbing in August of 2014, about a month after I graduated from college. Prior to climbing, I hadn't considered myself much of an athlete for the past four years.
             I had played soccer competitively for years, prior to college, but chose to play more casually for my first year at school while adjusting to the work load.<br>
             My sophomore year I was considering playing again in the Spring, but had the misfortune of breaking two vertebrae in my mid and lower spine that Winter. Recovery was intense and time consuming,
@@ -96,24 +117,17 @@
             believe that I had found a sport that I could do and not spend the following week on bed rest. I have climbed at least 3 times a week, every week since.
             <br> I have met amazing friends through the climbing community, and had the great fortune to climb all over the world. I've been able to use climbing to further strengthen my old injury areas and now I participate in
             Brazilian Jiujitsu as well. Recovery is an ongoing process, but climbing has restored a lot of my strength and sense of self.
-          </p>
-        </li>
-      </ul>
-    </div>
-    <hr>
-    <footer class="wrapper">
-      <nav>
-        <a href="./index.html" class="footer-nav">Home</a>
-        <a href="./projects.html" class="footer-nav">Projects</a>
-        <a href="./musings.html" class="footer-nav">Musings</a>
-        <a href="./about.html" class="footer-nav">About</a>
-      </nav>
-      <div>
-      <a class="contact-link" href="mailto:lillia.l.jackson@gmail.com">Email me!</a>
-      <br>
-      <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
-      <a  class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
+          </div>
+        </div>
       </div>
+    </div>
+    </div>
+  </div>
+    <hr>
+    <footer>
+        <a class="fa-links" href="mailto:lillia.l.jackson@gmail.com"><i class="far fa-envelope fa-md" > </i></a>
+        <a class="fa-links" href = "https://www.linkedin.com/in/lillia-jackson-832421158/" target="_blank"> <i class="fab fa-linkedin fa-md" > </i></a>
+        <a class="fa-links" href="https://github.com/lillialjackson" target="_blank"> <i class="fab fa-github fa-md"></i> </a>
     </footer>
   </div>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
